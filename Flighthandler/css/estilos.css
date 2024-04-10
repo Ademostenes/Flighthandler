@@ -6,7 +6,21 @@
     opacity: 90%;
     border: none;
 }
-
+.navegacion {
+    display:flex;
+    position: relative;
+    width: 100%;
+    height: 20px;
+    border-radius: 5px;
+    box-shadow:
+    rgba(0, 0, 0, 0.024) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0.05) 0px 1px 0px 0px,
+    rgba(0, 0, 0, 0.03) 0px 0px 8px 0px,
+    rgba(0, 0, 0, 0.1) 0px 10px 10px 0px;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: flex-start;
+}
 .promo {
     display:flex;
     position: relative;
@@ -33,12 +47,10 @@
     justify-content:space-between;
     padding-top: 0%;
     padding-bottom: 0%;
-    padding-left: 30px;
-    padding-right: 30px;
     background-color: rgb(56, 135, 240);
-    border-radius: 25px;
     height: 100px;  
     align-items: center;
+    margin: 0%;
 }
 
 body {
@@ -57,7 +69,7 @@ body {
     position: relative;
     margin: 0%;
     align-items: center;
-    z-index: 4;
+    z-index: 3;
     width: 58%;
     height:max-content;
     justify-content: flex-end;
@@ -90,6 +102,10 @@ body {
 .navText:hover {
     background-color: rgb(135, 176, 229);
 }
+
+.navText:active {
+    background-color: rgb(178, 201, 231);
+}
 .navText2 {
     margin-top: 41px;
     margin-left: 1px;
@@ -100,4 +116,28 @@ body {
 nav {
     background-color: rgb(56, 135, 240);
 
+}
+
+.textTitNav {
+    padding-left: 20px;
+    padding-right: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    color:rgb(63, 157, 219);
+    font-weight: bold;
+}
+
+.textLinkNav {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: grey;
+    font-size: 10px;
+    text-decoration: none;
+    padding-right: 2px;
+}
+
+.textSpanNav {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: grey;
+    font-size: 10px;
+    padding-right: 2px;
 }
