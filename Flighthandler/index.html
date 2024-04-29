@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index Navbar</title>
     <link rel="stylesheet" href="./css/estilos.css">
+    
 </head>
 <body>
     <header>
-    <div class="inicioMovil">
-        <a class="navText" onclick="">Menu</a>
+    <div class="inicioMovil" id = "inicioMov" onclick= "cambiaMenu()">
+        <a class="navText" >Menu +</a>
     </div>
-    <div class="contNav">
+    <div class="contNav" id = "barraNav">
     <nav class="navbar">
             <a class="navText" href="./index.html">
                 <img class="Ico" id="IcoCel" src="./Materials/svg/home.svg">
@@ -61,5 +62,6 @@
         </div>
     </div>
 </main>
+<script src="./funciones.js"></script>
 </body>
 </html>

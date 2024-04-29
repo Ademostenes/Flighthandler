@@ -212,27 +212,54 @@ nav {
 }
 } /* Finaliza estilo Desktop.*/
 
+@media only screen and (min-width:500px){
+    .inicioMovil {
+        display: none;
+    }
+}
+
 /* Inicia estilo mobile 1*/
 
 @media only screen and (max-width:499px){
 
     .busquedas {
-    display: none;
+    display: flex;
 }
+
 .navegacion {
     display:none;
 }
+
 .base {
-display: none;
+display: flex;
+justify-content: center;
 }
-h1Nav {
-    display: none;
+
+.h1Nav {
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    padding-bottom: 30px;
+    font-style: oblique;
+
 }
+
 #finder {
-    display: none;
+    display: flex;
+    height: 120px;
+    width: 98%;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    border-radius: 15px;
+    margin-top: 3px;
+    margin-left: 3px;
+    margin-right: 6px;
+
 }
 .contNav {
-    display: flex;
+    display: none;
     flex-direction: column;
 }
 .Ico {
@@ -244,8 +271,9 @@ h1Nav {
     position: relative;
     width: 100%;
     flex-direction: column;
-    padding-left: 6px;
+
 }
+
 .navbarDer {
     display:block;
     background-color: rgb(56, 135, 240);
@@ -253,7 +281,7 @@ h1Nav {
     width: 100%;
     justify-content:flex-start;
     flex-direction: column;
-    padding-left: 6px;
+
 }
 .navText {
     display: flex;
@@ -263,7 +291,16 @@ h1Nav {
     color: white;
     align-items: center;
     padding: 2px;
+    background-color: rgb(56, 135, 240);
 }
+
+.navText:hover{
+    background-color: aliceblue;
+    color: black;
+    font-weight: bold;
+    background-color: aliceblue;
+}
+
 .inicioMovil {
     display: flex;
     background-color: rgb(56, 135, 240);
@@ -273,4 +310,18 @@ h1Nav {
     align-items: center;
     padding-left: 6px;
 }
+.inicioMovil:hover {
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+.inicioMovil:hover > a {
+    color: black;
+    font-weight: bold;
+    background-color: aliceblue;
+    user-select:none ;
+    
+}
+
+
 }
