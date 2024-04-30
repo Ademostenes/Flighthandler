@@ -2,8 +2,8 @@
 
 .busquedas {
     display: flex;
-    width: 1150px;
-    height: 100px;
+    width: 85%;
+    height: 25%;
     border-radius: 45px;
     background-color: white;
     opacity: 90%;
@@ -48,9 +48,11 @@
     display: flex;
     color: rgb(255, 255, 255);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 48px;
+    font-size: 40px;
     padding-bottom: 30px;
     font-style: oblique;
+    transition-property: font-size;
+    transition-duration: 0.5s;
 }
 
 #finder {
@@ -205,26 +207,51 @@ nav {
 
 .spanBuscar:active {
     font-size: 25px;
-
+}
 .inicioMovil {
     display: none;
 }
 }
-} /* Finaliza estilo Desktop.*/
+ 
+
+/* Finaliza estilo Desktop.*/
 
 @media only screen and (min-width:500px){
     .inicioMovil {
         display: none;
     }
+
+    
 }
+
+@media screen and (max-width:700px) {
+
+    .botonBuscar {
+        width: 60px;
+        height: 40px;
+    }
+
+    .h1Nav {
+        font-size: 35px;
+    }
+    
+}
+
 
 /* Inicia estilo mobile 1*/
 
 @media only screen and (max-width:499px){
 
     .busquedas {
-    display: flex;
+    display: block;
 }
+
+    .spanBuscar {
+        font-size: 13px;
+    }
+
+
+
 
 .navegacion {
     display:none;
@@ -247,11 +274,11 @@ justify-content: center;
 
 #finder {
     display: flex;
-    height: 120px;
+    height: 300px;
     width: 98%;
-    align-items: center;
+    align-items: top;
     justify-content: center;
-    background-color: aqua;
+    background-color: rgb(56, 135, 240);
     border-radius: 15px;
     margin-top: 3px;
     margin-left: 3px;
